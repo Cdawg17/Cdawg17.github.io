@@ -2,4 +2,4 @@
 
 ## Colten A. Brunner
 
-##Projects
+This List is a compound of the coding projects I have done in my coding career
