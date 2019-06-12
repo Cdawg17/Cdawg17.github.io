@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Cdawg17's Website
 
 You can use the [editor on GitHub](https://github.com/Cdawg17/Cdawg17.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
