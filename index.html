@@ -105,23 +105,23 @@
     <div class="card">
       
       <div class="card-1" id="card-1">
-      <img src="card_images/example.png"/>
+      <img src="card_images/example.png" id="card-1"/>
       <br>
-      <span class="card-text"> Example </span>
+      <span class="card-text" id="card-1"> Example </span>
 
       </div>
     
       <div class="card-2" id="card-2"> 
-      <img src="card_images/example.png"/>
+      <img src="card_images/example.png" id="card-2"/>
       <br>
-      <span class="card-text"> Example </span>
+      <span class="card-text" id="card-2"> Example </span>
 
       </div>
     
       <div class="card-3" id="card-3"> 
-      <img src="card_images/example.png"/>
+      <img src="card_images/example.png" id="card-3"/>
       <br>
-      <span class="card-text"> Example </span>
+      <span class="card-text" id="card-3"> Example </span>
 
       </div>
 
@@ -134,7 +134,8 @@
     var target = e.target;
       //alert(target.id);
       console.log("action logged")
-      console.log("You have clicked: " + e.target.nodeName + "target id post" + e.target.id)
+      console.log("You have clicked: " + e.target.nodeName) 
+      console.log("target id post" + e.target.id)
   });
 </script>
 
