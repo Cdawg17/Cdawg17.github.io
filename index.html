@@ -74,6 +74,10 @@
       color:white;
       font-style: initial;
     }
+    img {
+      width:200px;
+      height:200px;
+    }
 </style>
 <div class="main-header">
 <h1 class=main-header-title>Colten A. Brunner</h1>
@@ -100,21 +104,21 @@
     
     <div class="card">
       
-      <div class="card-1">
+      <div class="card-1" id="card-1">
       <img src="card_images/example.png"/>
       <br>
       <span class="card-text"> Example </span>
 
       </div>
     
-      <div class="card-2"> 
+      <div class="card-2" id="card-2"> 
       <img src="card_images/example.png"/>
       <br>
       <span class="card-text"> Example </span>
 
       </div>
     
-      <div class="card-3"> 
+      <div class="card-3" id="card-3"> 
       <img src="card_images/example.png"/>
       <br>
       <span class="card-text"> Example </span>
@@ -125,7 +129,15 @@
     </div>
   </body>
 <!--</div>-->
-
+<script>
+  document.addEventListener('click', function(e){
+    var target = e.target;
+    if (target.tagName && target.tagName.toLowerCase() == "a") {
+      alert(target.id);
+      console.log("action logged")
+    }
+  });
+</script>
 
   
   
