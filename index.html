@@ -137,7 +137,7 @@
       console.log("action logged")
       console.log("You have clicked: " + e.target.nodeName) 
       console.log("target id post" + e.target.id)
-      var changeWebpage = $.post(e.target.id, function() {
+      var changeWebpage = post(e.target.id, function() {
         console.log("success")
       })
   });
