@@ -19,7 +19,7 @@
     {
       color: rgb(107, 191, 202);
       font-size: 150%;
-      text-align: center;
+      text-align: left;
       text-decoration: solid;
     }
     .header-subtitle {
@@ -80,7 +80,9 @@
     }
 </style>
 <div class="main-header">
-<h1 class=main-header-title>Colten A. Brunner</h1>
+<br>
+<br>
+<h1 class=main-header-title>Projects of Colten A. Brunner</h1> <!--create a dropdown for about me info, inquries, and maybe another thing-->
 </div>
 
 <!--<div class="container1">
@@ -98,9 +100,8 @@
     </div>-->
 <!--<div class="container 2">-->
   <body>
-    <p class="projects"> List of Current Projects</p>
+    <!--<p class="projects"> List of Current Projects</p>-->
     <br>
-    
     
     <div class="card">
       
@@ -136,6 +137,9 @@
       console.log("action logged")
       console.log("You have clicked: " + e.target.nodeName) 
       console.log("target id post" + e.target.id)
+      var changeWebpage = $.post(e.target.id, function() {
+        console.log("success")
+      })
   });
 </script>
 
