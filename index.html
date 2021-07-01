@@ -139,8 +139,8 @@
       console.log("target id post" + e.target.id)
       var requestPost = new XMLHttpRequest()
       var url = '/test'
-      requestPost.open('POST', url, true)
-
+      requestPost.open('POST', 'test', true)
+      console.log("posting")
       requestPost.onreadystatechange = function() {
         if(requestPost.readyState == 4 && requestPost.status == 200) {
           console.log("successful post request")
