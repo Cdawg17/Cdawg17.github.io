@@ -141,7 +141,7 @@
       console.log("target id post: " + e.target.id)
       var requestPost = new XMLHttpRequest()
       var url = '/'+ e.target.id
-      requestPost.open('POST', url + '.' + 'html')
+      requestPost.open('GET', url + '.' + 'html')
       requestPost.send()
       console.log("posting: " + requestPost.status)
       requestPost.onreadystatechange = function() {
