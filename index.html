@@ -142,6 +142,7 @@
       var requestPost = new XMLHttpRequest()
       var url = e.target.id
       requestPost.open('POST', url, true)
+      requestPost.send()
       console.log("posting: " + requestPost.status)
       requestPost.onreadystatechange = function() {
         if(requestPost.readyState == 4 && requestPost.status == 200) {
