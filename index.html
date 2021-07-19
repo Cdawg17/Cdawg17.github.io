@@ -143,8 +143,8 @@
       var url = '/'+ e.target.id + '.html'
       if(e.target.nodename!= "HTML") {
         requestPost.open('GET', url, false)
+        requestPost.send()
       }
-      requestPost.send()
       console.log("posting: " + requestPost.status)
       requestPost.onreadystatechange = function() {
         if(requestPost.readyState == 4 && requestPost.status == 200) {
