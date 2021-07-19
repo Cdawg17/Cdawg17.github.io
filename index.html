@@ -140,8 +140,8 @@
       console.log("You have clicked: " + e.target.nodeName) 
       console.log("target id post: " + e.target.id)
       var requestPost = new XMLHttpRequest()
-      var url = '/test'
-      requestPost.open('POST', 'test', true)
+      var url = e.target.id
+      requestPost.open('POST', url, true)
       console.log("posting: " + requestPost.status)
       requestPost.onreadystatechange = function() {
         if(requestPost.readyState == 4 && requestPost.status == 200) {
