@@ -141,7 +141,7 @@
       console.log("target id post: " + e.target.id)
       var requestPost = new XMLHttpRequest()
       var url = '/'+ e.target.id + '.html'
-      if(e.target.nodename!=HTML) {
+      if(e.target.nodename!= "HTML") {
         requestPost.open('GET', url, false)
       }
       requestPost.send()
