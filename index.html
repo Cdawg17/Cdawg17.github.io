@@ -139,18 +139,19 @@
       console.log("action logged")
       console.log("You have clicked: " + e.target.nodeName) 
       console.log("target id post: " + e.target.id)
-      var requestPost = new XMLHttpRequest()
+      //var requestPost = new XMLHttpRequest()
       var url = '/'+ e.target.id + '.html'
       if(e.target.nodeName != "HTML") {
-        requestPost.open('GET', url, false)
-        requestPost.send()
+        window.location.replace(url)
+        // requestPost.open('GET', url)
+        // requestPost.send()
       }
-      console.log("posting: " + requestPost.status)
-      requestPost.onreadystatechange = function() {
-        if(requestPost.readyState == 4 && requestPost.status == 200) {
-          console.log("successful post request")
-        }
-      }
+      //console.log("posting: " + requestPost.status)
+      // requestPost.onreadystatechange = function() {
+      //   if(requestPost.readyState == 4 && requestPost.status == 200) {
+      //     console.log("successful post request")
+      //   }
+      // }
   });
 </script>
 
